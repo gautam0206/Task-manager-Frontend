@@ -27,7 +27,6 @@ const ListTodo = ({ setEditingTodo }) => {
   const { token } = useSelector((state) => state.auth);
 
   useEffect(() => {
-    console.log(token);
     dispatch(getTask(token));
   }, []);
 

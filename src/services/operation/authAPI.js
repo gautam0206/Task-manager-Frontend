@@ -70,7 +70,7 @@ export function logout(navigate) {
   return (dispatch) => {
     dispatch(setToken(null));
     localStorage.removeItem("token");
-    localStorage.remove("todos");
+    localStorage.removeItem("todos");
     toast.success("Logged Out");
     navigate("/");
   };
